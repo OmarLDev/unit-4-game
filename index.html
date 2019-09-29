@@ -8,10 +8,47 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>Crystals Collector</title>
 </head>
 <body>
-    
+    <div class="jumbotron">
+        <h1 class="display-4">Crystals Collector!</h1>
+        <p class="lead"><p>Read instructions below.</p>
+        <hr class="my-4">
+            <p>You will be fiven a random number at the start of the game.</p>
+            <p>There are four crystals below. By clicking on a crystal you will ad a specific amount of points to your total score.</p> 
+            <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p> 
+            <p>The value of each crystal is hidden from you until you click on it.</p> 
+            <p>Each time when the game starts, the game will change the values of each Crystal.</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="#mainGame" id="start" role="button">Start!</a>
+        </p>
+      </div>
+
+      <section id="mainGame" class="container">
+        <div class="row">
+            <div class="col-lg-6" id="randomNumberDiv">
+                <h3>Number is:</h3>
+                <h4><span id="randomNumber">0</span></h4>
+            </div>
+            <div class="col-lg-6" id="totalScoreDiv">
+                <h3>Your total Score is:</h3>
+                <h4><span id="totalSCore">0</span></4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6" id="jewelsDiv">
+                <img src="assets/images/Goron's_Ruby.png" class="jewel" id="jewel1">
+                <img src="assets/images/Kokiri_Emerald.png" class="jewel" id="jewel2">
+                <img src="assets/images/Zora's_Sapphire.png" class="jewel" id="jewel3">
+                <img src="assets/images/382px-GoldRupee.png" class="jewel" id="jewel3" style="width: 30px">
+            </div>
+            <div class="col-lg-6" id="totalScoreDiv">
+                <h3>Your total Score is:</h3>
+                <h4><span id="totalSCore">0</span></4>
+            </div>
+        </div>
+      </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
